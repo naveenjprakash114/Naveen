@@ -1,0 +1,103 @@
+export const serviceHubs = [
+  {
+    id: "hub-alagapuram",
+    name: "Alagapuram Hub (Central Salem)",
+    locality: "Alagapuram",
+    city: "Salem",
+    state: "Tamil Nadu",
+    lat: 11.6643,
+    lng: 78.1460,
+    radiusKm: 5,
+    active: true,
+    estimatedTime: "8–10 mins",
+    description: "Serves Alagapuram, Peramanur, Salem New Bus Stand, and 5 km surrounding zone.",
+    riderCount: 14,
+    freezerTemp: "-22°C"
+  },
+  {
+    id: "hub-fairlands",
+    name: "Fairlands Hub",
+    locality: "Fairlands",
+    city: "Salem",
+    state: "Tamil Nadu",
+    lat: 11.6705,
+    lng: 78.1402,
+    radiusKm: 5,
+    active: true,
+    estimatedTime: "8–10 mins",
+    description: "Serves Fairlands, Swarnapuri, State Bank Colony, and 5 km radius.",
+    riderCount: 12,
+    freezerTemp: "-24°C"
+  },
+  {
+    id: "hub-hasthampatti",
+    name: "Hasthampatti Hub",
+    locality: "Hasthampatti",
+    city: "Salem",
+    state: "Tamil Nadu",
+    lat: 11.6798,
+    lng: 78.1578,
+    radiusKm: 5,
+    active: true,
+    estimatedTime: "9–11 mins",
+    description: "Serves Hasthampatti, Gorimedu, Cherry Road, and Yercaud Foothills approach.",
+    riderCount: 10,
+    freezerTemp: "-22°C"
+  },
+  {
+    id: "hub-suramangalam",
+    name: "Suramangalam / Railway Junction Hub",
+    locality: "Suramangalam",
+    city: "Salem",
+    state: "Tamil Nadu",
+    lat: 11.6720,
+    lng: 78.1189,
+    radiusKm: 5,
+    active: true,
+    estimatedTime: "8–10 mins",
+    description: "Serves Salem Junction, Suramangalam, Leigh Bazaar, and 5 km radius.",
+    riderCount: 11,
+    freezerTemp: "-23°C"
+  },
+  {
+    id: "hub-meyyanur",
+    name: "Meyyanur Hub",
+    locality: "Meyyanur",
+    city: "Salem",
+    state: "Tamil Nadu",
+    lat: 11.6628,
+    lng: 78.1325,
+    radiusKm: 5,
+    active: true,
+    estimatedTime: "8–10 mins",
+    description: "Serves Meyyanur Bypass, 3 Roads Circle, Five Roads Junction.",
+    riderCount: 15,
+    freezerTemp: "-24°C"
+  },
+  {
+    id: "hub-ammapet",
+    name: "Ammapet Hub (Upcoming)",
+    locality: "Ammapet",
+    city: "Salem",
+    state: "Tamil Nadu",
+    lat: 11.6580,
+    lng: 78.1750,
+    radiusKm: 5,
+    active: false,
+    estimatedTime: "Launching Q4",
+    description: "Hub under construction to expand coverage across East Salem.",
+    riderCount: 0,
+    freezerTemp: "Phase 2"
+  }
+];
+
+export const sampleSalemLocations = [
+  { name: "Alagapuram Main Road", locality: "Alagapuram", lat: 11.6643, lng: 78.1460, zone: "Alagapuram Hub" },
+  { name: "Fairlands 5th Cross", locality: "Fairlands", lat: 11.6705, lng: 78.1402, zone: "Fairlands Hub" },
+  { name: "Hasthampatti Bus Stop", locality: "Hasthampatti", lat: 11.6798, lng: 78.1578, zone: "Hasthampatti Hub" },
+  { name: "5 Roads Circle, Meyyanur", locality: "Meyyanur", lat: 11.6628, lng: 78.1325, zone: "Meyyanur Hub" },
+  { name: "Salem Junction Station", locality: "Suramangalam", lat: 11.6720, lng: 78.1189, zone: "Suramangalam Hub" },
+  { name: "Cherry Road, Salem", locality: "Hasthampatti", lat: 11.6750, lng: 78.1520, zone: "Hasthampatti Hub" },
+  { name: "Kondalampatti Junction", locality: "Kondalampatti", lat: 11.6200, lng: 78.1300, zone: "Outside Service Zone" },
+  { name: "Omalur Town (Outskirts)", locality: "Omalur", lat: 11.7400, lng: 78.0400, zone: "Outside Service Zone" }
+];

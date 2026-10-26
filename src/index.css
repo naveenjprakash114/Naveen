@@ -1,0 +1,123 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --color-bg-dark: #160D22;
+    --color-deep-plum: #271332;
+    --color-royal-purple: #4A2673;
+    --color-lavender: #B99AD8;
+    --color-soft-cream: #FFF8F0;
+    --color-gold: #D4AF61;
+  }
+
+  body {
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    background-color: #160D22;
+    color: #B99AD8;
+  }
+
+  h1, h2, h3, .font-serif-title {
+    font-family: 'Playfair Display', 'Cormorant Garamond', serif;
+    color: #FFF8F0;
+  }
+
+  .font-cormorant {
+    font-family: 'Cormorant Garamond', serif;
+  }
+}
+
+/* Custom Glassmorphism & Micro-Interactions */
+.glass-panel {
+  background: rgba(39, 19, 50, 0.85);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(212, 175, 97, 0.25);
+  color: #FFF8F0;
+}
+
+.glass-panel-dark {
+  background: rgba(22, 13, 34, 0.94);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border: 1px solid rgba(212, 175, 97, 0.35);
+  color: #FFF8F0;
+}
+
+.glass-card {
+  background: rgba(39, 19, 50, 0.78);
+  backdrop-filter: blur(12px);
+  border: 1px solid rgba(212, 175, 97, 0.22);
+  color: #FFF8F0;
+}
+
+/* Gold Shimmer & Royal Purple Gradient Text */
+.gold-gradient-text {
+  background: linear-gradient(135deg, #FFF8F0 0%, #D4AF61 50%, #B99AD8 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.strawberry-gradient-text {
+  background: linear-gradient(135deg, #FFF8F0 0%, #D4AF61 60%, #B99AD8 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.gold-border {
+  border-image: linear-gradient(to right, #D4AF61, #4A2673) 1;
+}
+
+/* Custom scrollbars */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #160D22;
+}
+::-webkit-scrollbar-thumb {
+  background: #D4AF61;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #4A2673;
+}
+
+/* Cold Mist Animation */
+@keyframes coldMist {
+  0% {
+    opacity: 0.2;
+    transform: translateY(0) scale(1);
+  }
+  50% {
+    opacity: 0.6;
+    transform: translateY(-8px) scale(1.05);
+  }
+  100% {
+    opacity: 0.2;
+    transform: translateY(0) scale(1);
+  }
+}
+
+.animate-mist {
+  animation: coldMist 4s ease-in-out infinite;
+}
+
+/* Ripple Pulse */
+@keyframes zonePulse {
+  0% {
+    transform: scale(0.95);
+    opacity: 0.8;
+  }
+  50% {
+    transform: scale(1.05);
+    opacity: 0.3;
+  }
+  100% {
+    transform: scale(0.95);
+    opacity: 0.8;
+  }
+}
+
+.animate-zone-pulse {
+  animation: zonePulse 3s ease-in-out infinite;
+}
